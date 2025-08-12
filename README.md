@@ -1,6 +1,6 @@
-# CRUD Application with Sequelize ORM
+# Week 3 - User Management API
 
-This is a simple CRUD (Create, Read, Update, Delete) application built with Node.js, Express, and Sequelize ORM. It demonstrates how to use Sequelize to interact with a MySQL database.
+This is a simple CRUD (Create, Read, Update, Delete) application built with Node.js, Express, and Sequelize ORM. It demonstrates how to use Sequelize to interact with a PostgreSQL database.
 
 ## Features
 
@@ -8,12 +8,12 @@ This is a simple CRUD (Create, Read, Update, Delete) application built with Node
 - Complete CRUD operations
 - Data validation using Sequelize validators
 - Web interface for interacting with the API
-- MySQL database integration
+- PostgreSQL database integration
 
 ## Prerequisites
 
 - Node.js (v12 or higher)
-- MySQL server
+- PostgreSQL server
 
 ## Installation
 
@@ -25,12 +25,16 @@ This is a simple CRUD (Create, Read, Update, Delete) application built with Node
    ```
 
 3. Configure the database
-   - Create a MySQL database named `crud_app_db` (or update the .env file with your preferred database name)
-   - Update the `.env` file with your MySQL credentials
+   - Create a PostgreSQL database named `crud_app_db` (or update the .env file with your preferred database name)
+   - Update the `.env` file with your PostgreSQL credentials
 
 4. Start the application
    ```
-   node src/server.js
+   npm start
+   ```
+   or for development:
+   ```
+   npx nodemon src/server.js
    ```
 
 5. Access the application
